@@ -1,0 +1,3 @@
+rule: elk-saved-objects (except api/alerting for delete)
+siem: elk-detection-engin*
+connector: elk-saved-objects (type is action)

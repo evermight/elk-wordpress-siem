@@ -1,0 +1,20 @@
+{
+    "properties": {
+      "site_url": {
+        "type": "keyword"
+      },
+      "hostname": {
+        "type": "keyword"
+      },
+      "plugins": {
+        "type": "object"
+      },
+      "outdated_plugin_count": {
+        "type": "integer"
+      },
+      "timestamp": {
+        "type": "date",
+        "format": "strict_date_optional_time"
+      }
+    }
+}

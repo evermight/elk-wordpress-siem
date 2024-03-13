@@ -1,0 +1,33 @@
+{
+    "properties": {
+      "alert_type": {
+        "type": "keyword"
+      },
+      "hits": {
+        "type": "keyword"
+      },
+      "query": {
+        "type": "keyword"
+      },
+      "condition": {
+        "type": "keyword"
+      },
+      "link": {
+        "type": "keyword"
+      },
+      "name": {
+        "type": "keyword"
+      },
+      "rule_date": {
+        "type": "date",
+        "format": "strict_date_optional_time"
+      },
+      "context_date": {
+        "type": "date",
+        "format": "strict_date_optional_time"
+      },
+      "value": {
+        "type": "keyword"
+      }
+    }
+}

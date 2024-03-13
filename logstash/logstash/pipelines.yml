@@ -1,0 +1,20 @@
+# This file is where you define your pipelines. You can define multiple.
+# For more information on multiple pipelines, see the documentation:
+#   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
+
+#- pipeline.id: change-now
+#  path.config: "/etc/logstash/conf.d/change-now.conf"
+#- pipeline.id: disk-now
+#  path.config: "/etc/logstash/conf.d/disk-now.conf"
+- pipeline.id: clamscans
+  path.config: "/etc/logstash/conf.d/clamscans.conf"
+- pipeline.id: uptime-monitors
+  path.config: "/etc/logstash/conf.d/uptime-monitors.conf"
+- pipeline.id: disk
+  path.config: "/etc/logstash/conf.d/disk.conf"
+- pipeline.id: siem
+  path.config: "/etc/logstash/conf.d/siem.conf"
+- pipeline.id: wp-plugins-changed
+  path.config: "/etc/logstash/conf.d/wp-plugins-changed.conf"
+- pipeline.id: wp-outdated-plugins
+  path.config: "/etc/logstash/conf.d/wp-outdated-plugins.conf"

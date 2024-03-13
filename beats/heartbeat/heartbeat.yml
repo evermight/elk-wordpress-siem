@@ -1,0 +1,26 @@
+heartbeat.config.monitors:
+  path: /usr/share/heartbeat/monitors.d/*.yml
+  # If enabled, heartbeat will periodically check the config.monitors path for changes
+  reload.enabled: true
+  # How often to check for changes
+  reload.period: 5s
+
+setup.kibana:
+  host: ${KIBANA_HOSTS}
+  username: ${ELASTIC_USER}
+  password: ${ELASTIC_PASSWORD} 
+
+output.elasticsearch:
+  hosts: ${ELASTIC_HOSTS}
+  username: ${ELASTIC_USER}
+  password: ${ELASTIC_PASSWORD}
+  ssl:
+    enabled: true
+    certificate_authorities: ${CA_CERT}
+processors:
+  - add_observer_metadata:
+      geo:
+        name: Madrid, Spain
+        # Lat, Lon "
+        location: "40.4378698, -3.8196205"
+

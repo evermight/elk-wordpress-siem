@@ -1,0 +1,18 @@
+- type: http
+  id: web1-plugin
+  name: Web1 WordPress Plugin Check
+  urls: ["http://web1.evermight.net/?rest_route=/evermight/v1/plugin-check"]
+  check.response.status: [200]
+  schedule: '@every 1m'
+- type: http
+  id: web2-plugin
+  name: Web2 WordPress Plugin Check
+  urls: ["http://web2.evermight.net/?rest_route=/evermight/v1/plugin-check"]
+  check.response.status: [200]
+  schedule: '@every 1m'
+- type: http
+  id: web3-plugin
+  name: Web3 WordPress Plugin Check
+  urls: ["http://web3.evermight.net/?rest_route=/evermight/v1/plugin-check"]
+  check.response.status: [200]
+  schedule: '@every 1m'

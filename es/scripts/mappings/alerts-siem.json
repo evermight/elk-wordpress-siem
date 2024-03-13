@@ -1,0 +1,26 @@
+{
+    "properties": {
+      "context_alerts": {
+        "type": "text"
+      },
+      "email_intro": {
+        "type": "keyword"
+      },
+      "alert_type": {
+        "type": "keyword"
+      },
+      "params": {
+        "type": "keyword"
+      },
+      "query": {
+        "type": "keyword"
+      },
+      "name": {
+        "type": "keyword"
+      },
+      "rule_date": {
+        "type": "date",
+        "format": "strict_date_optional_time"
+      }
+    }
+}

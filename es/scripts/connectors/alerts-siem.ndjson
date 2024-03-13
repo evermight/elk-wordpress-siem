@@ -1,0 +1,2 @@
+{"attributes":{"actionTypeId":".index","config":{"executionTimeField":null,"index":"alerts-siem","refresh":false},"isMissingSecrets":false,"name":"alerts-siem","secrets":{}},"coreMigrationVersion":"8.8.0","created_at":"2024-02-07T01:42:16.872Z","id":"446e2d20-c554-11ee-a7fc-855e12ead1d4","managed":false,"references":[],"type":"action","typeMigrationVersion":"8.3.0","updated_at":"2024-02-07T01:42:16.872Z","version":"WzQyMTYsNF0="}
+{"excludedObjects":[],"excludedObjectsCount":0,"exportedCount":1,"missingRefCount":0,"missingReferences":[]}

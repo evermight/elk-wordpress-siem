@@ -1,0 +1,43 @@
+{
+    "properties": {
+      "hostname": {
+        "type": "keyword"
+      },
+      "known_viruses": {
+        "type": "integer"
+      },
+      "engine_version": {
+        "type": "keyword"
+      },
+      "scanned_directories": {
+        "type": "integer"
+      },
+      "scanned_files": {
+        "type": "integer"
+      },
+      "infected_files": {
+        "type": "integer"
+      },
+      "data_scanned": {
+        "type": "keyword"
+      },
+      "data_read": {
+        "type": "keyword"
+      },
+      "time": {
+        "type": "keyword"
+      },
+      "end_date": {
+        "type": "date",
+	"format": "yyyy-MM-dd HH:mm:ss.SSSSSS"
+      },
+      "start_date": {
+        "type": "date",
+	"format": "yyyy-MM-dd HH:mm:ss.SSSSSS"
+      },
+      "timestamp": {
+        "type": "date",
+        "format": "strict_date_optional_time"
+      }
+    }
+}

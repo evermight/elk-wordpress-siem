@@ -1,0 +1,6 @@
+[wordpress-login]
+enabled  = true
+logpath  = %(apache_access_log)s
+findtime = 300
+bantime  = 900
+maxretry = 10

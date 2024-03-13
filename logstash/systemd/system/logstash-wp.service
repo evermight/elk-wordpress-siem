@@ -1,0 +1,20 @@
+[Unit]
+Description=logstash WP
+
+[Service]
+Type=simple
+User=logstash
+Group=logstash
+EnvironmentFile=-/etc/logstash/.env
+ExecStart=/usr/share/logstash/bin/logstash "--path.settings" "/etc/logstash"
+Restart=always
+WorkingDirectory=/
+Nice=19
+LimitNOFILE=16384
+
+# When stopping, how long to wait before giving up and sending SIGKILL?
+# Keep in mind that SIGKILL on a process can cause data loss.
+TimeoutStopSec=infinity
+
+[Install]
+WantedBy=multi-user.target
