@@ -9,6 +9,7 @@
   name: Web2 WordPress Site
   urls: ["http://web2.evermight.net/"]
   check.response.status: [200]
+  schedule: '@every 1m'
 - type: http
   id: web3
   name: Web3 WordPress Site
