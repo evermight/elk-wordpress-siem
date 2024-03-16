@@ -16,3 +16,21 @@
   urls: ["http://web3.evermight.net/?rest_route=/evermight/v1/plugin-check"]
   check.response.status: [200]
   schedule: '@every 1m'
+- type: http
+  id: web4-plugin
+  name: Web4 WordPress Plugin Check
+  urls: ["http://web4.evermight.net/?rest_route=/evermight/v1/plugin-check"]
+  check.response.status: [200]
+  schedule: '@every 1m'
+- type: http
+  id: web5-plugin
+  name: Web5 WordPress Plugin Check
+  urls: ["http://web5.evermight.net/?rest_route=/evermight/v1/plugin-check"]
+  check.response.status: [200]
+  schedule: '@every 1m'
+- type: http
+  id: web6-plugin
+  name: Web6 WordPress Plugin Check
+  urls: ["http://web6.evermight.net/?rest_route=/evermight/v1/plugin-check"]
+  check.response.status: [200]
+  schedule: '@every 1m'

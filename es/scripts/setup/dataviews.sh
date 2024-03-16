@@ -7,3 +7,5 @@ curl -k -X POST -u $ELASTIC_USER:$ELASTIC_PASS "$KIBANA_HOST/api/data_views/data
 -d @./dataviews/clamscans.json
 curl -k -X POST -u $ELASTIC_USER:$ELASTIC_PASS "$KIBANA_HOST/api/data_views/data_view" -H "kbn-xsrf: reporting" -H "Content-Type: application/json" \
 -d @./dataviews/wp-plugins.json
+curl -k -X POST -u $ELASTIC_USER:$ELASTIC_PASS "$KIBANA_HOST/api/data_views/data_view" -H "kbn-xsrf: reporting" -H "Content-Type: application/json" \
+-d @./dataviews/heartbeat.json

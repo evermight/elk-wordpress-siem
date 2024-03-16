@@ -16,4 +16,22 @@
   urls: ["http://web3.evermight.net/"]
   check.response.status: [200]
   schedule: '@every 1m'
+- type: http
+  id: web4
+  name: Web4 WordPress Site
+  urls: ["http://web4.evermight.net/"]
+  check.response.status: [200]
+  schedule: '@every 1m'
+- type: http
+  id: web5
+  name: Web5 WordPress Site
+  urls: ["http://web5.evermight.net/"]
+  check.response.status: [200]
+  schedule: '@every 1m'
+- type: http
+  id: web6
+  name: Web6 WordPress Site
+  urls: ["http://web6.evermight.net/"]
+  check.response.status: [200]
+  schedule: '@every 1m'
 
