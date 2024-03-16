@@ -8,8 +8,6 @@ volumes:
     driver: local
   heartbeatdata01:
     driver: local
-  filebeatdata01:
-    driver: local
 
 networks:
   default:
