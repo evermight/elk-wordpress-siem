@@ -28,7 +28,7 @@ payload=$(echo "$payload" | sed -e 's/\(\s[0-9][0-9]:[0-9][0-9]:[0-9][0-9]\)",$/
 hn=$(hostname)
 payload=$payload'"hostname":"'$hn'",';
 # Add linux timestamp
-tm=$(date -u +'%FT%T.%2NZ')
+tm=$(date -u +'%FT%T.%3NZ')
 payload=$payload'"timestamp":"'$tm'"';
 
 ## Remove comma from last line of file
