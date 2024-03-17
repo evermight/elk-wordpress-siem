@@ -1,6 +1,5 @@
 #!/bin/bash
 
-./setup/users.sh;
 ./setup/mappings.sh;
 ./setup/dataviews.sh;
 ./setup/connectors.sh

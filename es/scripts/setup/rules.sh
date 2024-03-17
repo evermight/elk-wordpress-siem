@@ -13,3 +13,9 @@ curl -k -X POST -u $ELASTIC_USER:$ELASTIC_PASS "$KIBANA_HOST/api/saved_objects/_
 curl -k -X POST -u $ELASTIC_USER:$ELASTIC_PASS "$KIBANA_HOST/api/saved_objects/_import" -H "kbn-xsrf: true" \
 --form file=@./rules/wp-outdated-plugins.ndjson
 
+curl -k -X POST -u $ELASTIC_USER:$ELASTIC_PASS "$KIBANA_HOST/api/saved_objects/_import" -H "kbn-xsrf: true" \
+--form file=@./rules/disks.ndjson
+
+curl -k -X POST -u $ELASTIC_USER:$ELASTIC_PASS "$KIBANA_HOST/api/saved_objects/_import" -H "kbn-xsrf: true" \
+--form file=@./rules/wp-plugins-changed.ndjson
+
