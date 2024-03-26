@@ -7,8 +7,10 @@ source ./.env
 curl -k -X DELETE -u $ELASTIC_USER:$ELASTIC_PASS "$ELASTIC_HOST/alerts-siem"
 curl -k -X DELETE -u $ELASTIC_USER:$ELASTIC_PASS "$ELASTIC_HOST/alerts-general"
 curl -k -X DELETE -u $ELASTIC_USER:$ELASTIC_PASS "$ELASTIC_HOST/clamscans"
+curl -k -X DELETE -u $ELASTIC_USER:$ELASTIC_PASS "$ELASTIC_HOST/fail2ban"
 curl -k -X DELETE -u $ELASTIC_USER:$ELASTIC_PASS "$ELASTIC_HOST/wp-plugins"
 
+curl -k -X DELETE -u $ELASTIC_USER:$ELASTIC_PASS "$KIBANA_HOST/api/data_views/data_view/3c126ef7-6442-4c01-9f2d-5d0bb7c7a980" -H "kbn-xsrf: reporting"
 curl -k -X DELETE -u $ELASTIC_USER:$ELASTIC_PASS "$KIBANA_HOST/api/data_views/data_view/333e7141-c564-4a3b-b7c7-3bf85329a076" -H "kbn-xsrf: reporting"
 curl -k -X DELETE -u $ELASTIC_USER:$ELASTIC_PASS "$KIBANA_HOST/api/data_views/data_view/6b0a22f4-5cd0-46c0-b332-39423067beb8" -H "kbn-xsrf: reporting"
 curl -k -X DELETE -u $ELASTIC_USER:$ELASTIC_PASS "$KIBANA_HOST/api/data_views/data_view/e2b51bf4-db11-4628-b1df-94a249cf9e2e" -H "kbn-xsrf: reporting"
